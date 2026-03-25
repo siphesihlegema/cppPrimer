@@ -43,4 +43,11 @@ int main() {
     for (char c: str)
         cout << c << '\n';
 
+    // manipulating strings with Range for loop and references
+    string test("Ligma Balls35");
+    for(auto &c : test)
+        c = toupper(c);
+
+    cout << test << "\n";
+
 }
