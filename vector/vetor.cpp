@@ -16,4 +16,18 @@ int main() {
     std::vector<std::vector<int>>  strvec;
     std::string str("Hello");
     strvec = {intvec};
+    
+    std::vector<int> ivec (10, 10);
+
+    // value Initialization
+    std::vector<int> ints(10); // ints is a vector initialised with 10, 0 integers.
+    std::vector<std::string> strings(5); // five empty strings
+
+    // addiing ellements to a vector
+    std::vector<int> v1;
+    for(int i{}; i != 100; ++i) {
+        v1.push_back(i);
+    }
+
+    std::cout << v1.size() << "\n";
 }
