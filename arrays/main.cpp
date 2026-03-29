@@ -34,4 +34,16 @@ int main() {
     
     // Now this is crazu notation
     int *(&arry)[42] = parr; // arry is a reference to an array of ten pointers
+                             
+    // pointers are itterators
+
+    int arr4[] = {1, 2, 3, 4, 6, 7, 8, 9};
+    int *p = arr4;
+    
+    int *end = &arr4[8];
+
+    for (int *ptr = arr4; ptr != end; ++ptr)
+        std::cout << *ptr << " ";
+
+    std::cout << "\n";
 }
